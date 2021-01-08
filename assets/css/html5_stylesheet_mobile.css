@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ 
+	
+    font: 1.5em sans-serif; 
+	text-align: center;
+	background-color:black;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+ }
+	
+body a {color:rgb(6, 5, 92)}
+
+header {background-color:rgb(6, 5, 92);
+	color: #ffffff;
+	padding: 10px;
+	text-align:center;
+	height:12em;
+}
+#title {
+	font-size:1.7em;
+	top:3em;
+}
+
+#logo {
+	display:block;
+	width: 40%;
+	height: auto;
+	margin-left:0.5em;
+	top:-2.7em;
+	
+	
+
+}
+.btn {
+	float:right;
+	background-color:  rgb(58, 62, 70); 
+	border-radius: 0em; /* eckige Kanten */
+	border: none; /* Remove borders */
+	color: white; /* White text */
+	padding: 2em 1.3em; /* Some padding */
+	font-size: 0.65em; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+	position: absolute;
+	top:1em;
+	right:10em;
+	
+  }
+  .btn:hover {
+	background-color:rgb(124, 130, 133);
+  }
+
+.btn2 {
+	
+	float:right;
+	background-color:  rgb(58, 62, 70); 
+	border-radius: 0em; /* eckige Kanten */
+	border: none; /* Remove borders */
+	color: white; /* White text */
+	padding: 2.1em 1.2em; /* Some padding */
+	font-size: 0.65em; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+	position: absolute;
+	top:1em;
+	right:1em;
+  }
+  
+  /* Darker background on mouse-over */
+.btn2:hover {
+	background-color:rgb(124, 130, 133);
+  }
+
+  nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	font-size: 1.2em;
+	position: relative;
+	margin: 0 0 .2em 0;
+	padding: 0;
+	width: 10em;
+
+
+}
+
+nav ul ul {
+	position: absolute;
+	top: -0.6em;
+	left: 8em;
+	font: 0/0 sans-serif;
+	
+	/* Unternavigation ausblenden */
+	
+	z-index: -1;
+	transition: font 0.5s;
+}
+
+nav ul li:hover ul,
+nav ul a:focus ~ ul {
+	font: inherit;
+	z-index: auto;
+	/*  Unternavigation einblenden */
+}
+
+@media (min-width: 45em) {
+	nav li {
+		font-size: 1.2em;
+		
+	}
+
+}
+
+nav a {
+	display: block;
+	padding: 0.4em;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid rgb(36, 36, 44);
+	color: white;
+	background-color: rgb(6, 5, 92);
+	transition: all .25s ease-in;
+}
+
+nav li[aria-current] a {
+	background-color: rgb(6, 5, 92);
+	
+
+}
+
+nav a:focus,
+nav a:hover,
+nav li[aria-current] a:focus,
+nav li[aria-current] a:hover {
+	color: white;
+	background-color: rgb(124, 130, 133);
+}
+#abstand_footer {
+	margin-top: 10em;
+}
+#hilfscontainer{width: 100%;}
+
+#index_titel {
+	text-align:left; 
+	margin-left:1em;
+	font-size:1.7em;
+}
+
+.cover {
+	height: auto;
+	max-width:80%;
+	margin: 2em;
+	margin-right:2em;
+	border:1em solid white;
+	
+	
+}
+.clear{
+	clear: left;
+	height: 0;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.filmbeschreibung {
+	color:black;
+	background-color: white;
+	max-width: 80%;
+	padding: 1em;
+	margin: 2em;
+	margin-top: 0.8em;
+	text-align: left;
+	display: block;
+}
+#svg {
+	margin-top:-4em;
+	
+
+	
+}
+#komplettes_kino {
+	text-align:center;
+	margin-top:19em;
+	font-size:1.3em;
+
+}
+#canvas {
+	width: 80%;
+	height:15em;
+	margin:1em;
+}
+#panorama {
+	text-align:center; 
+	font-size:1.3em;
+}
+
+
+

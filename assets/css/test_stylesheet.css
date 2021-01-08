@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  height: 100%;
+}
+
+#page {
+  width: 80%;
+  min-width: 500px;
+  max-width: 1200px;
+}
+body {
+  font: 1.5em sans-serif;
+  text-align: center;
+  background: rgb(31, 31, 31);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: -webkit-linear-gradient(left, #001696, #44bae9);
+  position: relative;
+  max-width: 100%;
+  height: 20%;
+  padding-bottom: 8%;
+}
+
+#title {
+  color: white;
+  top: 1em;
+  text-align: center;
+  position: relative;
+}
+
+#logo {
+  display: block;
+  position: absolute;
+  width: 13%;
+  height: auto;
+  margin-left: 1em;
+}
+
+.btn {
+  border-radius: 12px;
+}
+/* Style buttons */
+.btnanmelden {
+  float: right;
+  background-color: rgb(58, 62, 70);
+  border-radius: 0em; /* eckige Kanten */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 2.5em 1.5em; /* Some padding */
+  font-size: 0.8em; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  position: absolute;
+  top: 4em;
+  right: 15em;
+  border-radius: 12px;
+}
+
+/* Darker background on mouse-over */
+.btnanmelden:hover {
+  background-color: rgb(124, 130, 133);
+}
+
+.btn-light {
+  color: black;
+}
+
+.btn2 {
+  float: right;
+  background-color: rgb(58, 62, 70);
+  border-radius: 0em; /* eckige Kanten */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 2.5em 1.5em; /* Some padding */
+  font-size: 0.8em; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  position: absolute;
+  top: 4em;
+  right: 4em;
+  border-radius: 12px;
+}
+
+/* Darker background on mouse-over */
+.btn2:hover {
+  background-color: rgb(124, 130, 133);
+}
+
+.btn3:hover {
+  background-color: rgb(124, 130, 133);
+}
+
+.btn3 {
+  float: right;
+  background-color: rgb(58, 62, 70);
+  border-radius: 0em; /* eckige Kanten */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 2.5em 1.5em; /* Some padding */
+  font-size: 0.8em; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  position: absolute;
+  top: 4em;
+  right: 26em;
+  border-radius: 12px;
+}
+
+.btnfilm1 {
+  border-radius: 0em;
+  border: none;
+  color: white;
+  padding: 1.5em 1em;
+  font-size: 0.7em;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-linear-gradient(left, #001696, #44bae9);
+}
+.btnfilm1:hover {
+  background-color: rgb(124, 130, 133);
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1.5em;
+  position: relative;
+  margin: 0 0 0.2em 0;
+  padding: 0;
+  width: 12em;
+}
+
+nav ul ul {
+  position: absolute;
+  top: -0.6em;
+  left: 10em;
+  font: 0/0 serif;
+  /* Unternavigation ausblenden */
+
+  z-index: -1;
+  transition: font 0.5s;
+}
+
+nav ul li:hover ul,
+nav ul a:focus ~ ul {
+  font: inherit;
+  z-index: auto;
+  /*  Unternavigation einblenden */
+}
+
+@media (min-width: 45em) {
+  nav li {
+    font-size: 1.2em;
+  }
+}
+
+nav a {
+  display: block;
+  padding: 0.4em;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid rgb(36, 36, 44);
+  color: white;
+  background-color: rgb(6, 5, 92);
+  transition: all 0.25s ease-in;
+}
+
+nav li[aria-current] a {
+  background-color: rgb(6, 5, 92);
+}
+
+nav a:focus,
+nav a:hover,
+nav li[aria-current] a:focus,
+nav li[aria-current] a:hover {
+  color: white;
+  background-color: rgb(124, 130, 133);
+}
+
+#index_titel {
+  text-align: left;
+  margin-left: 10em;
+}
+
+.cover {
+  height: auto;
+  max-width: 16%;
+  margin: 2em;
+  margin-right: 2em;
+  display: block;
+  border: 2em solid white;
+  margin-left: 20em;
+}
+.clear {
+  clear: left;
+  height: 0;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.filmbeschreibung {
+  color: black;
+  background-color: white;
+  max-width: 50%;
+  padding: 1em;
+  margin: 2em;
+  margin-top: 0.8em;
+  text-align: left;
+  display: block;
+  float: left;
+}
+#abstand_footer {
+  margin-top: 8em;
+}
+
+table,
+th,
+td,
+caption {
+  border: thin solid rgb(58, 62, 70);
+  table-layout: auto;
+  float: center;
+}
+
+table {
+  border-collapse: collpase;
+  border-spacing: 0;
+  border-width: thin 0 0 thin;
+  margin: 2em;
+  margin-right: 11em;
+  table-layout: auto;
+  /* Prevents HTML tables from becoming too wide */
+  width: 50%;
+  height: 30%;
+  max-width: 100%;
+  margin-left: 9em;
+}
+
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+  background-color: #f1f3f4;
+  color: black;
+}
+
+th,
+caption {
+  background-color: #f1f3f4;
+  font-weight: 700;
+  color: black;
+}
+
+th,
+td,
+caption {
+  padding: 0.4em 0.6em;
+  font-style: sans-serif;
+}
+
+caption {
+  text-align: center;
+  border-width: thin thin 0 thin;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  color: rgb(6, 5, 92);
+}
+
+#cookie a {
+  color: #000;
+  text-decoration: none;
+}
+
+#cookie a:hover {
+  text-decoration: underline;
+}
+
+#cookie div {
+  padding: 10px;
+  padding-right: 40px;
+}
+
+#cookie {
+  font-family: "Roboto", sans-serif;
+  outline: 1px solid white;
+  text-align: center;
+  border-top: 1px solid #fff;
+  background: white;
+  background: -moz-linear-gradient(top, #d6e0eb 0%, #f2f6f9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, white),
+    color-stop(100%, white)
+  );
+  background: -webkit-linear-gradient(top, #d6e0eb 0%, #f2f6f9 100%);
+  background: -o-linear-gradient(top, #d6e0eb 0%, #f2f6f9 100%);
+  background: -ms-linear-gradient(top, #d6e0eb 0%, #f2f6f9 100%);
+  background: linear-gradient(to bottom, #d6e0eb 0%, #f2f6f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(   startColorstr='#d6e0eb', endColorstr='#f2f6f9',GradientType=0 );
+  position: fixed;
+  bottom: 0px;
+  z-index: 10000;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#cookieCloser {
+  color: rgb(6, 5, 92);
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+  cursor: pointer;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid #7b92a9;
+  border-right: 1px solid #7b92a9;
+  padding: 4px;
+  background: #ced6df; /* Old browsers */
+  background: -moz-linear-gradient(top, #ced6df0%, #f2f6f9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ced6df),
+    color-stop(100%, #f2f6f9)
+  );
+  background: -webkit-linear-gradient(top, #ced6df0%, #f2f6f9 100%);
+  background: -o-linear-gradient(top, #ced6df0%, #f2f6f9 100%);
+  background: -ms-linear-gradient(top, #ced6df0%, #f2f6f9 100%);
+  background: linear-gradient(to bottom, #ced6df0%, #f2f6f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(    startColorstr='#ced6df', endColorstr='#f2f6f9',GradientType=0 );
+}
+
+#cookieCloser:hover {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid #7b92a9;
+  border-left: 1px solid #7b92a9;
+}
+
+.grid {
+  padding: 100px 0 0 100px;
+}
+svg {
+  stroke: white;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  background: rgb(6, 5, 92);
+}
+#svg {
+  margin-top: -4em;
+  float: center;
+  position: relative;
+  left: -4em;
+}
+#komplettes_kino {
+  text-align: center;
+  margin-top: 19em;
+  font-size: 1.5em;
+}
+#canvas {
+  width: 60%;
+  height: 40em;
+  margin: 2em;
+}
+#panorama {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 5em;
+}
+
+#registernow {
+  margin-top: 200px;
+}
+
+.loginfailed {
+  color: red;
+}
